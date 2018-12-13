@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dec 5th, Inline vs Block vs Inline Block</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <p><code>.inline-list > li</code> selects list items (li) that DIRECTLY (>) descend from the .inline-list branch of the document:</p>
+<ul class="list-unstyle list-inline">
+  <li>Intro</li>
+  <li>Lessons of Note</li>
+  <li>Grades</li>
+  <li>Topics</li>
+</ul>
+<p>Using a type selector (li) is less problematic here (in terms of best practice and scalability) because it's qualified by a specific parent.</p>
+<p>Using two different parent classes for two different things (unstyling and inlining) make those classes independently reusable because they're decoupled from each other and this specific implementation of those classes.</p>
+  
+  
+
+</body>
+
+</html>
